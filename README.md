@@ -159,6 +159,17 @@ pnpm i #确保电脑安装了 pnpm
 pnpm run dev
 ```
 
+### ⚡ 一键生成建模论文
+
+完成上述依赖配置后，在 `backend` 目录下准备 `.env.dev`（或设置相应环境变量），脚本会自动加载这些配置。然后即可使用脚本快速运行完整流程：
+
+```bash
+cd backend
+uv run python run_pipeline.py --file path/to/questions.txt
+```
+
+生成的结果将保存在 `backend/project/work_dir/<task_id>/` 目录下。
+
 
 ### 🚀 方案三：自动脚本部署（来自社区）
 有没有自动部署的脚本 ？
