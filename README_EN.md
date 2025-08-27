@@ -155,6 +155,17 @@ Results and outputs are generated in the `backend/project/work_dir/xxx/*` direct
 - notebook.ipynb: code generated during execution
 - res.md: final results in markdown format
 
+### ⚡ One-Click Paper Generation
+
+After installing the dependencies, create an `.env.dev` file under `backend` (or set the needed environment variables). The script will load these automatically. Then you can run the entire workflow via CLI:
+
+```bash
+cd backend
+uv run python run_pipeline.py --file path/to/questions.txt
+```
+
+The results will be stored in `backend/project/work_dir/<task_id>/`.
+
 ### 🚀 Option 3: Automated Script Deployment (Community Contribution)
 Need an automatic deployment script?
 [mmaAutoSetupRun](https://github.com/Fitia-UCAS/mmaAutoSetupRun)
